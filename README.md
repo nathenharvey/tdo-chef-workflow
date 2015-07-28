@@ -17,6 +17,7 @@ Big thanks to [Triangle DevOps](http://www.meetup.com/Triangle-DevOps) and [Bron
   * Install and run Chef on both of those VMs
   * Run the Serverspec tests in both VMs
   * Leave the VMs around for you to inspect (`kitchen login centos` OR `ktichen login ubuntu`, if you'd like to poke around)
+1. From this directory run `foodcritic .` to see the foodcritic errors (I fixed this from the live coding session.  Reach out to me if you want to know how).
 1. `kitchen destroy` to clean-up the VMs.
 
 ### YouTube
