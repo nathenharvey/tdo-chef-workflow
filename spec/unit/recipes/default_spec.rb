@@ -28,7 +28,7 @@ describe 'web::default' do
 
   context 'When all attributes are default, on an ubuntu platform' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new.({:platform => "ubuntu", :version => "14.04"})
+      runner = ChefSpec::ServerRunner.new(:platform => "ubuntu", :version => "14.04")
       runner.converge(described_recipe)
     end
 
