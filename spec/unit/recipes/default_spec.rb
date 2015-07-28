@@ -16,5 +16,13 @@ describe 'web::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'installs httpd' do
+      expect(chef_run).to install_package 'httpd'
+    end
+
+    it 'starts httpd' do
+      expect(chef_run).to start_service 'httpd'
+    end
   end
 end
