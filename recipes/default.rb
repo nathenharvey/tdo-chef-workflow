@@ -10,6 +10,7 @@ if node['platform'] == 'ubuntu'
   package_name = 'apache2'
   service_name = 'apache2'
   include_recipe 'apt::default'
+  include_recipe 'curl::default'
 end
 
 package "#{package_name}" do
